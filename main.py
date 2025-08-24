@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-# Simple Perplexity AI client
+# Simple Perplexity setup
 llm = ChatOpenAI(
     model="sonar-pro",
     api_key=os.getenv("PERPLEXITY_API_KEY"),
@@ -12,5 +12,5 @@ llm = ChatOpenAI(
 )
 
 # Ask a question
-response = llm.invoke("What is the meaning of life?")
+response = llm.invoke("What is the meaning of friendship and relationship?")
 print(response.content)
